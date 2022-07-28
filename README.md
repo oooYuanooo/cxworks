@@ -1,5 +1,6 @@
-# cxworks
+# 
 2022 创新创业实践 课程作业
+202000150023 贾鹏渊
 ## 完成项目
 
 Project: implement the naïve birthday attack of reduced SM3
