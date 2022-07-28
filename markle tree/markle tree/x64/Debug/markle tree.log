@@ -1,0 +1,28 @@
+﻿  markle tree.cpp
+C:\Users\19577\Desktop\markle tree\markle tree\MT.h(25,32): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+C:\Users\19577\Desktop\markle tree\markle tree\picosha2.h(172,45): warning C4244: “参数”: 从“__int64”转换到“picosha2::word_t”，可能丢失数据
+C:\Users\19577\Desktop\markle tree\markle tree\picosha2.h(272): message : 查看对正在编译的函数 模板 实例化“void picosha2::hash256_one_by_one::process<RaIter>(RaIter,RaIter)”的引用
+          with
+          [
+              RaIter=std::_String_const_iterator<std::_String_val<std::_Simple_types<char>>>
+          ]
+C:\Users\19577\Desktop\markle tree\markle tree\picosha2.h(304): message : 查看对正在编译的函数 模板 实例化“void picosha2::impl::hash256_impl<InIter,OutIter>(RaIter,RaIter,OutIter,OutIter,int,std::random_access_iterator_tag)”的引用
+          with
+          [
+              InIter=std::_String_const_iterator<std::_String_val<std::_Simple_types<char>>>,
+              OutIter=picosha2::byte_t *,
+              RaIter=std::_String_const_iterator<std::_String_val<std::_Simple_types<char>>>
+          ]
+C:\Users\19577\Desktop\markle tree\markle tree\picosha2.h(325): message : 查看对正在编译的函数 模板 实例化“void picosha2::hash256<InIter,picosha2::byte_t*>(InIter,InIter,OutIter,OutIter,int)”的引用
+          with
+          [
+              InIter=std::_String_const_iterator<std::_String_val<std::_Simple_types<char>>>,
+              OutIter=picosha2::byte_t *
+          ]
+C:\Users\19577\Desktop\markle tree\markle tree\picosha2.h(339): message : 查看对正在编译的函数 模板 实例化“void picosha2::hash256_hex_string<std::_String_const_iterator<std::_String_val<std::_Simple_types<_Elem>>>>(InIter,InIter,std::string &)”的引用
+          with
+          [
+              _Elem=char,
+              InIter=std::_String_const_iterator<std::_String_val<std::_Simple_types<char>>>
+          ]
+  markle tree.vcxproj -> C:\Users\19577\Desktop\markle tree\x64\Debug\markle tree.exe
