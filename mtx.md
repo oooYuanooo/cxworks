@@ -1,6 +1,9 @@
 # send a tx on Bitcoin testnet
 ## 在编辑状态下便于查看
 
+## 在虚拟机中实现，以下利用script进行打印
+
+
 Script started on 2022-07-28 17:21:54+08:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="79" LINES="22"]
 ]0;jx05lan@jx05lan-VirtualBox: ~[01;32mjx05lan@jx05lan-VirtualBox[00m:[01;34m~[00m$ exitsudo docker run -t -i -p 19001:19001 -p 19011:19011 freewil/bitcoin-testnet-box
 [sudo] password for jx05lan: 
