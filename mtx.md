@@ -1,3 +1,6 @@
+# send a tx on Bitcoin testnet
+## 在编辑状态下便于查看
+
 Script started on 2022-07-28 17:21:54+08:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="79" LINES="22"]
 ]0;jx05lan@jx05lan-VirtualBox: ~[01;32mjx05lan@jx05lan-VirtualBox[00m:[01;34m~[00m$ exitsudo docker run -t -i -p 19001:19001 -p 19011:19011 freewil/bitcoin-testnet-box
 [sudo] password for jx05lan: 
@@ -43,25 +46,50 @@ bitcoin-cli -datadir=2  -getinfo
   "relayfee": 0.00001000,
   "warnings": ""
 }
-[32;32mtester@6620a3d170ec[00m [01;34m~/bitcoin-testnet-box[00m$ bitcoin-cli -datadir=1 createwallet  "tets  st1"
+[32;32mtester@6620a3d170ec[00m [01;34m~/bitcoin-testnet-box[00m$ bitcoin-cli -datadir=1 createwallet  
+"tets  st1"
 {
   "name": "test1",
   "warning": ""
 }
-[32;32mtester@6620a3d170ec[00m [01;34m~/bitcoin-testnet-box[00m$ [Kbitcoin-cli -datadir=1 createwallet ""test1"[1P"2""[A[32;32mtester@6620a3d170ec[00m [01;34m~/bitcoin-testnet-box[00m$ bitcoin-cli -datadir=1 createwallet createwallet "t[1P[A[32;32mtester@6620a3d170ec[00m [01;34m~/bitcoin-testnet-box[00m$ bitcoin-cli -datadir=2 createwallet "[1@t[A[32;32mtester@6620a3d170ec[00m [01;34m~/bitcoin-testnet-box[00m$ bitcoin-cli -datadir=2
-
+[32;32mtester@6620a3d170ec[00m [01;34m~/bitcoin-testnet-box[00m$ [Kbitcoin-cli -datadir=1 createwallet "
+"test1"[1P"2""
+[A
+[32;32mtester@6620a3d170ec[00m [01;34m~/bitcoin-testnet-box[00m$ bitcoin-cli -datadir=1 createwallet createwallet "t[1P[A
+[32;32mtester@6620a3d170ec[00m [01;34m~/bitcoin-testnet-box[00m$ bitcoin-cli -datadir=2 createwallet "[1@t[A
+[32;32mtester@6620a3d170ec[00m [01;34m~/bitcoin-testnet-box[00m$ bitcoin-cli -datadir=2
+
+
 {
   "name": "test2",
   "warning": ""
 }
-[32;32mtester@6620a3d170ec[00m [01;34m~/bitcoin-testnet-box[00m$ [Kbitcoin-cli -datadir=2 createwallet ""test2"       [A[32;32mtester@6620a3d170ec[00m [01;34m~/bitcoin-testnet-box[00m$ bitcoin-cli -datadir=2 createwallet  [K[A[32;32mtester@6620a3d170ec[00m [01;34m~/bitcoin-testnet-box[00m$ bitcoin-cli -datadir=2 createwallet[K
-[K[A[32;32mtester@6620a3d170ec[00m [01;34m~/bitcoin-testnet-box[00m$ bitcoin-cli -datadir=2 createwallet            getnewaddress [A[32;32mtester@6620a3d170ec[00m [01;34m~/bitcoin-testnet-box[00m$ bitcoin-cli -datadir=2 getnewaddres[Ks
+[32;32mtester@6620a3d170ec[00m [01;34m~/bitcoin-testnet-box[00m$ [Kbitcoin-cli -datadir=2 createwallet "
+"test2"       [A
+[32;32mtester@6620a3d170ec[00m [01;34m~/bitcoin-testnet-box[00m$ bitcoin-cli -datadir=2 createwallet  
+[K[A
+[32;32mtester@6620a3d170ec[00m [01;34m~/bitcoin-testnet-box[00m$ bitcoin-cli -datadir=2 createwallet[K
+
+[K[A
+[32;32mtester@6620a3d170ec[00m [01;34m~/bitcoin-testnet-box[00m$ bitcoin-cli -datadir=2 createwallet            getnewaddress 
+[A[32;32mtester@6620a3d170ec[00m [01;34m~/bitcoin-testnet-box[00m$ bitcoin-cli -datadir=2 getnewaddres[Ks
 bcrt1qdejfeswfskz6a9vx8pqa4z77rjtzxenu6zn6te
-[32;32mtester@6620a3d170ec[00m [01;34m~/bitcoin-testnet-box[00m$ [Kbitcoin-cli -datadir=2 getnewaddress [A[32;32mtester@6620a3d170ec[00m [01;34m~/bitcoin-testnet-box[00m$ bitcoin-cli -datadir=2 getnewaddres2[1P
-[K[A[32;32mtester@6620a3d170ec[00m [01;34m~/bitcoin-testnet-box[00m$ bitcoin-cli -datadir=1 getnewaddress [A[32;32mtester@6620a3d170ec[00m [01;34m~/bitcoin-testnet-box[00m$ bitcoin-cli -datadir=1
-bcrt1qc0evl8u8jfpnccy3rktmsj5wd2jurv3ta4pj49
-[32;32mtester@6620a3d170ec[00m [01;34m~/bitcoin-testnet-box[00m$ [Kbitcoin-cli -datadir=1 getnewaddress [A[32;32mtester@6620a3d170ec[00m [01;34m~/bitcoin-testnet-box[00m$ bitcoin-cli -datadir=1 getnewaddres[K
-[K[A[32;32mtester@6620a3d170ec[00m [01;34m~/bitcoin-testnet-box[00m$ bitcoin-cli -datadir=1 getnewaddres         walletinfo [A[32;32mtester@6620a3d170ec[00m [01;34m~/bitcoin-testnet-box[00m$ bitcoin-cli -datadir=1 getwalletinf[Ko
+[32;32mtester@6620a3d170ec[00m [01;34m~/bitcoin-testnet-box[00m$ [Kbitcoin-cli -datadir=2 getnewaddress 
+[A
+[32;32mtester@6620a3d170ec[00m [01;34m~/bitcoin-testnet-box[00m$ bitcoin-cli -datadir=2 getnewaddres2[1P
+
+[K[A
+[32;32mtester@6620a3d170ec[00m [01;34m~/bitcoin-testnet-box[00m$ bitcoin-cli -datadir=1 getnewaddress [A
+[32;32mtester@6620a3d170ec[00m [01;34m~/bitcoin-testnet-box[00m$ bitcoin-cli -datadir=1
+
+bcrt1qc0evl8u8jfpnccy3rktmsj5wd2jurv3ta4pj49
+[32;32mtester@6620a3d170ec[00m [01;34m~/bitcoin-testnet-box[00m$ [Kbitcoin-cli -datadir=1 getnewaddress 
+[A
+[32;32mtester@6620a3d170ec[00m [01;34m~/bitcoin-testnet-box[00m$ bitcoin-cli -datadir=1 getnewaddres[K
+
+[K[A
+[32;32mtester@6620a3d170ec[00m [01;34m~/bitcoin-testnet-box[00m$ bitcoin-cli -datadir=1 getnewaddres         walletinfo 
+[A[32;32mtester@6620a3d170ec[00m [01;34m~/bitcoin-testnet-box[00m$ bitcoin-cli -datadir=1 getwalletinf[Ko
 {
   "walletname": "test1",
   "walletversion": 169900,
@@ -287,7 +315,8 @@ bitcoin-cli -datadir=1  -generate 200
     "017bf29f599fc0685fe3e9946c2d94eee51408a44284f2afac79898c920be40c"
   ]
 }
-[32;32mtester@6620a3d170ec[00m [01;34m~/bitcoin-testnet-box[00m$ make generate BLOCKS=200bitcoin-cli -datadir=1 getwalletinfo [A[32;32mtester@6620a3d170ec[00m [01;34m~/bitcoin-testnet-box[00m$ bitcoin-cli -datadir=1 getwalletinf[Ko
+[32;32mtester@6620a3d170ec[00m [01;34m~/bitcoin-testnet-box[00m$ make generate BLOCKS=200bitcoin-cli -datadir=1 getwalletinfo 
+[A[32;32mtester@6620a3d170ec[00m [01;34m~/bitcoin-testnet-box[00m$ bitcoin-cli -datadir=1 getwalletinf[Ko
 {
   "walletname": "test1",
   "walletversion": 169900,
@@ -306,7 +335,8 @@ bitcoin-cli -datadir=1  -generate 200
   "scanning": false,
   "descriptors": false
 }
-[32;32mtester@6620a3d170ec[00m [01;34m~/bitcoin-testnet-box[00m$ [Kbitcoin-cli -datadir=1  sendtoaddresss 2N5czXHSEFronnYvMHUhSinQW8jjp7UjRtu 10[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[44@bcrt1qdejfeswfskz6a9vx8pqa4z77rjtzxenu6zn6te
+[32;32mtester@6620a3d170ec[00m [01;34m~/bitcoin-testnet-box[00m$ [Kbitcoin-cli -datadir=1  sendtoaddress
+s 2N5czXHSEFronnYvMHUhSinQW8jjp7UjRtu 10[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[44@bcrt1qdejfeswfskz6a9vx8pqa4z77rjtzxenu6zn6te
 error code: -6
 error message:
 Fee estimation failed. Fallbackfee is disabled. Wait a few blocks or enable -fallbackfee.
